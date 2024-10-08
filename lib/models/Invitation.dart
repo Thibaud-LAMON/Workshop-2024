@@ -6,15 +6,15 @@ class Invitation{
   int id;
   String email;
   Cabinet cabinet;
-  Status status;
-  DateTime createdAt;
+  Status status = Status.PENDING;
+  DateTime? createdAt = DateTime.now();
 
   Invitation({
     required this.id,
     required this.email,
     required this.cabinet,
     required this.status,
-    required this.createdAt,
+    this.createdAt,
   });
 
   @override

@@ -1,6 +1,6 @@
 enum Recurrence {
-  QUOTIDIEN,
-  HEBDOMADAIRE,
-  MENSUEL,
-  ANNUEL
+  NONE,
+  DAILY,
+  WEEKLY,
+  MONTHLY,
 }

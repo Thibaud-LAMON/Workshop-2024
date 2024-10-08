@@ -1,20 +1,20 @@
 import 'Cabinet.dart';
 
 class User {
-  int? id;
+  int id;
   String name;
   String email;
   String password;
   Cabinet? cabinet;
-  DateTime createdAt;
+  DateTime? createdAt = DateTime.now();
 
   User({
-    this.id,
+    required this.id,
     required this.name,
     required this.email,
     required this.password,
     this.cabinet,
-    required this.createdAt,
+    this.createdAt,
   });
 
   @override

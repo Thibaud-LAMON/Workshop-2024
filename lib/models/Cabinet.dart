@@ -3,16 +3,16 @@
 import 'User.dart';
 
 class Cabinet{
-  int? id;
+  int id;
   String name;
-  User? user;
-  DateTime createdAt;
+  User user;
+  DateTime? createdAt = DateTime.now();
 
   Cabinet({
-    this.id,
+    required this.id,
     required this.name,
-    this.user,
-    required this.createdAt,
+    required this.user,
+    this.createdAt,
   });
 
   @override

@@ -1,19 +1,19 @@
 import 'Cabinet.dart';
 
 class Patient {
-  int? id;
-  Cabinet? cabinet;
+  int id;
+  Cabinet cabinet;
   String name;
   String address;
-  String notes;
-  DateTime? createdAt;
+  String? notes;
+  DateTime? createdAt = DateTime.now();
 
   Patient({
-    this.id,
-    this.cabinet,
+    required this.id,
+    required this.cabinet,
     required this.name,
     required this.address,
-    required this.notes,
+    this.notes,
     this.createdAt,
   });
 

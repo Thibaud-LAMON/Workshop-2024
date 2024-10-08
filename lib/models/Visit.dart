@@ -7,26 +7,26 @@ import 'Patient.dart';
 
 
 class Visit {
-  int? id;
+  int id;
   Patient patient;
   Cabinet cabinet;
-  DateTime visitDate;
-  Recurrence recurrence;
+  DateTime? visitDate;
+  Recurrence recurrence = Recurrence.NONE;
   TimeOfDay visitTime;
-  Status status;
-  String notes;
-  DateTime createdAt;
+  Status status = Status.SCHEDULED;
+  String? notes;
+  DateTime? createdAt = DateTime.now();
 
   Visit({
-    this.id,
+    required this.id,
     required this.patient,
     required this.cabinet,
-    required this.visitDate,
+    this.visitDate,
     required this.recurrence,
     required this.visitTime,
     required this.status,
-    required this.notes,
-    required this.createdAt,
+    this.notes,
+    this.createdAt,
   });
 
   @override
