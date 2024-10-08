@@ -3,20 +3,20 @@
 import 'User.dart';
 
 class Cabinet{
-  int? cabinetId;
+  int? id;
   String name;
-  User? ownerUserId;
+  User? user;
   DateTime createdAt;
 
   Cabinet({
-    this.cabinetId,
+    this.id,
     required this.name,
-    this.ownerUserId,
+    this.user,
     required this.createdAt,
   });
 
   @override
   String toString() {
-    return 'Cabinet{cabinetId: $cabinetId, name: $name, ownerUserId: $ownerUserId, createdAt: $createdAt}';
+    return 'Cabinet{cabinetId: $id, name: $name, ownerUserId: $user, createdAt: $createdAt}';
   }
 }

@@ -1,24 +1,24 @@
 import 'Cabinet.dart';
 
 class User {
-  int? userId;
+  int? id;
   String name;
   String email;
   String password;
-  Cabinet? cabinetId;
+  Cabinet? cabinet;
   DateTime createdAt;
 
   User({
-    this.userId,
+    this.id,
     required this.name,
     required this.email,
     required this.password,
-    this.cabinetId,
+    this.cabinet,
     required this.createdAt,
   });
 
   @override
   String toString() {
-    return 'User{userId: $userId, name: $name, email: $email, password: $password, cabinetId: $cabinetId, createdAt: $createdAt}';
+    return 'User{userId: $id, name: $name, email: $email, password: $password, cabinetId: $cabinet, createdAt: $createdAt}';
   }
 }
