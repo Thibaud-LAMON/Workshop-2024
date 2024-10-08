@@ -17,6 +17,6 @@ class Cabinet{
 
   @override
   String toString() {
-    return 'Cabinet{cabinetId: $id, name: $name, ownerUserId: $user, createdAt: $createdAt}';
+    return 'Cabinet{cabinet_id: $id, name: $name, owner_user_id: $user, created_at: $createdAt}';
   }
 }

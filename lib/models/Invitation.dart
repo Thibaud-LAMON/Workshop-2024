@@ -19,6 +19,6 @@ class Invitation{
 
   @override
   String toString() {
-    return 'Invitation{invitationId: $id, email: $email, cabinetId: $cabinet, status: $status, createdAt: $createdAt}';
+    return 'Invitation{invitation_id: $id, email: $email, cabinet_id: $cabinet, status: $status, created_at: $createdAt}';
   }
 }

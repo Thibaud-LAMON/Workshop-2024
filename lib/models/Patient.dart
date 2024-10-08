@@ -3,7 +3,9 @@ import 'Cabinet.dart';
 class Patient {
   int id;
   Cabinet cabinet;
-  String name;
+  String firstName;
+  String lastName;
+  String? maidenName;
   String address;
   String? notes;
   DateTime? createdAt = DateTime.now();
@@ -11,7 +13,9 @@ class Patient {
   Patient({
     required this.id,
     required this.cabinet,
-    required this.name,
+    required this.firstName,
+    required this.lastName,
+    this.maidenName,
     required this.address,
     this.notes,
     this.createdAt,
@@ -19,6 +23,6 @@ class Patient {
 
   @override
   String toString() {
-    return 'Patient{patientId: $id, cabinetId: $cabinet, name: $name, address: $address, notes: $notes, createdAt: $createdAt}';
+    return 'Patient{patient_id: $id, cabinet_id: $cabinet, first_name: $firstName, last_name: $lastName, maiden_name: $maidenName, address: $address, notes: $notes, created_at: $createdAt}';
   }
 }

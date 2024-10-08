@@ -31,6 +31,6 @@ class Visit {
 
   @override
   String toString() {
-    return 'Visit{visitId: $id, patientId: $patient, cabinetId: $cabinet, visitDate: $visitDate, recurrence: $recurrence, visitTime: $visitTime, status: $status, notes: $notes, createdAt: $createdAt}';
+    return 'Visit{visit_id: $id, patient_id: $patient, cabinet_id: $cabinet, visit_date: $visitDate, recurrence: $recurrence, visit_time: $visitTime, status: $status, notes: $notes, created_at: $createdAt}';
   }
 }
