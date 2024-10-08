@@ -1,0 +1,6 @@
+enum Recurrence {
+  QUOTIDIEN,
+  HEBDOMADAIRE,
+  MENSUEL,
+  ANNUEL
+}
