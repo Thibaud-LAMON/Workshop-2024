@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'enums/Recurrence.dart';
-import 'enums/Status.dart';
+import 'enums/visits/Recurrence.dart';
+import 'enums/visits/Status.dart';
 import 'Cabinet.dart';
 import 'Patient.dart';
 

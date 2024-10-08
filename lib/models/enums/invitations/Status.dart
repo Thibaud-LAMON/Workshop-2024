@@ -1,0 +1,6 @@
+enum Status {
+  A_ENVOYER,
+  EN_ATTENTE,
+  DECLINEE,
+  ACCEPTEE,
+}
