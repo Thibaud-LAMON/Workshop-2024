@@ -6,6 +6,8 @@ class Patient {
   String firstName;
   String lastName;
   String? maidenName;
+  DateTime birthDate;
+  // pour avoir uniquement la date, on la formatera dans le frontend grâce au DTO.
   String address;
   String? notes;
   DateTime? createdAt = DateTime.now();
@@ -16,6 +18,7 @@ class Patient {
     required this.firstName,
     required this.lastName,
     this.maidenName,
+    required this.birthDate,
     required this.address,
     this.notes,
     this.createdAt,
