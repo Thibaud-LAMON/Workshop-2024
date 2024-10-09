@@ -3,7 +3,7 @@ import 'enums/invitations/Status.dart';
 import 'Cabinet.dart';
 
 class Invitation{
-  int id;
+  int? id;
   String email;
   Cabinet cabinet;
   Status status = Status.PENDING;

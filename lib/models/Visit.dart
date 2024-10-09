@@ -7,7 +7,7 @@ import 'Patient.dart';
 
 
 class Visit {
-  int id;
+  int? id;
   Patient patient;
   Cabinet cabinet;
   DateTime? visitDate;

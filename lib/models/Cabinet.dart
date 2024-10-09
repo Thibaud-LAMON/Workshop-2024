@@ -1,7 +1,7 @@
 import 'User.dart';
 
 class Cabinet{
-  int id;
+  int? id;
   String name;
   User user;
   DateTime? createdAt = DateTime.now();

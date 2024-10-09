@@ -1,7 +1,7 @@
 import 'Cabinet.dart';
 
 class Patient {
-  int id;
+  int? id;
   Cabinet cabinet;
   String firstName;
   String lastName;

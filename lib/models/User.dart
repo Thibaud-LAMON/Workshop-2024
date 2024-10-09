@@ -1,7 +1,7 @@
 import 'Cabinet.dart';
 
 class User {
-  int id;
+  int? id;
   String name;
   String email;
   String password;
