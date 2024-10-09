@@ -1,0 +1,5 @@
+enum Status {
+  SCHEDULED,
+  COMPLETED,
+  CANCELED,
+}
