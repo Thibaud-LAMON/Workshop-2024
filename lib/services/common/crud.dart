@@ -53,7 +53,7 @@ class Crud {
   }
 
   // Update
-  Future<BigInt> put(String tableName,
+  Future<BigInt> update(String tableName,
       Map data,
       Map conditions,
       [MySQLConnection? connexion]

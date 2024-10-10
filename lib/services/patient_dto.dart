@@ -60,7 +60,7 @@ class PatientDto extends Crud {
     return patients;
   }
 
-  Future<BigInt> update(Patient patient, [MySQLConnection? connexion]) async {
+  Future<BigInt> put(Patient patient, [MySQLConnection? connexion]) async {
     Map<String, dynamic> data = {
       'cabinet': patient.cabinet.id,
       'firstName': patient.firstName,
@@ -71,7 +71,7 @@ class PatientDto extends Crud {
       'notes': patient.notes,
       'createdAt': patient.createdAt.toString(),
     };
-    return await super.put(_table, data, {'id': patient.id}, connexion);
+    return await super.update(_table, data, {'id': patient.id}, connexion);
   }
 
   Future<BigInt> destroy([Patient? patient, MySQLConnection? connexion]) async {
